@@ -1,4 +1,4 @@
-# Retail AI 
+# Retail AI (In Progress)
 
 Welcome to the **Retail AI: Transforming Product Categorization and Customer Experience**! This repository encompasses the work and projects undertaken during the internship, aimed at solving real-world challenges in the retail industry through advanced technologies such as Machine Learning, Natural Language Processing (NLP), Generative AI, and Full-Stack Development.  
 
