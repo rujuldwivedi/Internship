@@ -1,0 +1,9 @@
+Data Visualization
+- Histograms (Items per category)
+- Missing Values (For each column)
+- EDAs possible around NLPs (Documentations)
+- Hypothesis (Correlation Assumptions)
+
+Model Planning
+- Classification + NLPs (1st Part)
+- Gen AI (2nd Part)
