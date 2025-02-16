@@ -1,0 +1,17 @@
+Data Visualization
+- Histograms (Items per category)
+- Missing Values (For each column)
+- EDAs possible around NLPs (Documentations) - Word Cloud
+- Hypothesis (Correlation Assumptions)
+
+Natural Language Processing
+- Text Preprocessing: Remove punctuations, articles, short forms; Convert to lower case
+- Tokenization - Getting every token out
+- Stemming/Lemmatization - Return the root word
+- Vectorization - Numerical Embedding - Glove/Bow/TF-IDF
+- Modeling Classification: LSTM / bi-LSTM
+- Multi-class Classification: Numerical Values
+
+Model
+- Classification + NLPs (1st Part)
+- Gen AI (2nd Part)
