@@ -1,103 +1,117 @@
-# Retail AI
+<!-- Company Logo -->
+![Latentview Analytics](company_logo.png)  
+
+# AI-Powered Classification System for Automated Retail Categorization
+
+<!-- Project Banner -->
+![Project Banner](banner_image.png)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Problem Statement](#problem-statement)
+- [Project Objectives](#project-objectives)
+- [Datasets](#datasets)
+- [Solution Approach](#solution-approach)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Modeling Techniques](#modeling-techniques)
+    - [Amazon Product Metadata Classification](#amazon-product-metadata-classification)
+    - [Audience Persona Categorization](#audience-persona-categorization)
+    - [Chief-Level Role Classification](#chief-level-role-classification)
+    - [Hybrid BERT and Generative AI Model](#hybrid-bert-and-generative-ai-model)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Results](#results)
+- [Future Scope](#future-scope)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [References](#references)
 
 ---
 
 ## Introduction
+This project focuses on developing an AI-powered classification system aimed at optimizing inventory management and product organization through automated retail categorization. The system leverages advanced NLP and deep learning techniques to classify product metadata and user-generated title descriptions.
 
-Welcome to the **Retail AI** project! This repository encompasses our ongoing work to revolutionize the retail industry through advanced technologies such as Machine Learning, Natural Language Processing (NLP), and Generative AI. Our primary focus is on solving real-world challenges in product categorization and enhancing customer experience.
+## Problem Statement
+Retail categorization in large-scale environments is complex due to diverse product attributes and extensive inventories. Manual categorization is inefficient and error-prone, necessitating an automated solution. The project addresses three major challenges:
+1. Accurately classifying Amazon product metadata.
+2. Categorizing user-entered titles from the Databricks dataset.
+3. Managing a highly imbalanced dataset for chief-level role classification.
 
----
+## Project Objectives
+- Develop a high-accuracy classification model for product metadata categorization.
+- Leverage NLP techniques for categorizing audience personas and chief-level roles.
+- Implement a hybrid approach using LSTM, BERT, and Generative AI to handle complex scenarios.
 
-## 🎯 Project Objectives
+## Datasets
+- **Amazon Datasets:** Categorized under 35 categories, filtered using a defined metric to cover ~80% of total products.
+- **Databricks Dataset:** Contains title descriptions with two labeling columns — Audience Personas and Chief-Level Roles.
+- **Imbalanced Dataset for Chief-Level Roles:** Managed through undersampling, PCA, and SMOTE sampling.
 
-- Develop an AI-powered product classification system for automatic categorization
-- Enhance product discoverability through intuitive organization
-- Provide insights into customer behavior and market trends
-- Leverage NLP and Generative AI for improved customer interaction
+## Solution Approach
+### Data Preprocessing
+- Lowercasing, special character removal, translation to English, and lemmatization.
+- Feature extraction using TF-IDF, Word2Vec, and BERT embeddings.
+- PCA for dimensionality reduction and SMOTE for balancing skewed data.
 
----
+### Modeling Techniques
+#### Amazon Product Metadata Classification
+- LSTM model trained on a balanced dataset.
+- Achieved **90% test accuracy**.
 
-## 🛠️ Technologies Used
+#### Audience Persona Categorization
+- Classified user titles from Databricks using LSTM.
+- Model trained on well-distributed data with **97.5% accuracy**.
 
-- Machine Learning (ML)
-- Natural Language Processing (NLP)
-- Generative AI
-- Full-Stack Development
+#### Chief-Level Role Classification
+- Classified titles into chief-level roles, managing extreme class imbalance.
+- Introduced 'Others/Unprioritized' class.
+- Applied undersampling, PCA, and SMOTE before training.
+- Hybrid BERT and Generative AI model planned for improved recall.
 
----
+#### Hybrid BERT and Generative AI Model
+- Future implementation to enhance performance on imbalanced datasets.
 
-## 📊 Dataset
+## Evaluation Metrics
+- Accuracy, Precision, Recall, F1-score.
+- Classification reports and confusion matrices for detailed assessment.
+- Placeholder for results: ![Classification Report](results1.png)
+- Placeholder for dataset info: ![Dataset Info](results2.png)
 
-We are using the comprehensive Amazon Review Dataset, available at: https://amazon-reviews-2023.github.io/
+## Results
+- **Amazon Product Metadata:** 90% test accuracy.
+- **Audience Persona Classification:** 97.5% test accuracy.
+- **Chief-Level Roles:** Struggled with recall; hybrid BERT + Gen AI model planned.
 
-A sampled version of this dataset is provided in this repository for ease of use and experimentation.
+## Future Scope
+- Real-time categorization for dynamic inventory systems.
+- Integration of multi-lingual models for broader applications.
+- Implement feedback loops for iterative improvements.
 
----
+## Getting Started
+### Installation
+Clone the repository:
+```
+   git clone <repository_url>
+```
 
-## 📂 Project Structure
+Install dependencies:
+```
+   pip install -r requirements.txt
+```
 
-1. **Data Visualization & Augmentation**
-   - Histograms (Items per category)
-   - Missing Values Analysis
-   - NLP-focused Exploratory Data Analysis (EDA)
-   - Word Cloud Visualizations
-   - Correlation Analysis and Hypothesis Testing
+### Usage
+Run preprocessing:
+```
+   python preprocess.py
+```
 
-2. **Natural Language Processing Model**
-   - Text Preprocessing
-   <!-- Remove punctuations, articles, short forms; Convert to lower case -->
-   - Tokenization
-   - Stemming/Lemmatization
-   - Vectorization (Using GloVe, Bag of Words, or TF-IDF)
-   - Modeling Classification: LSTM / bi-LSTM
-   - Multi-class Classification
+Train the models:
+```
+   python train_model.py --model LSTM
+```
 
-3. **Generative Artificial Intelligence Model**
-   - To Be Completed (Ongoing)
-
----
-
-## 🚀 Getting Started
-
-1. Clone this repository
-2. Install required dependencies.
-3. Explore the Jupyter notebooks in the repository.
-
----
-
-## 📊 Key Features
-
-1. **Automatic Product Categorization**:
-   - ML models to classify products into the retail hierarchy with high accuracy
-
-2. **Customer Experience Enhancements**:
-   - Intuitive frontend for product navigation and interaction
-   - NLP-powered insights to understand customer behavior
-
-3. **Feedback Analysis with Generative AI** (Upcoming):
-   - Tools to process customer reviews and provide actionable feedback
-
----
-
-## 🧠 Insights
-
-This project aims to provide actionable insights by:
-- Identifying popular product categories and trends
-- Understanding customer preferences through NLP analysis
-- Improving the organization and discoverability of products
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to improve the project! Please follow the contribution guidelines in CONTRIBUTING.md.
-
----
-
-## 📄 License
-
-This project is licensed under [LatentView Analytics](https://www.latentview.com). Unauthorized use or distribution of this material is prohibited.
-
----
-
-Feel free to explore, contribute, and reach out with any questions or feedback!
+### References
+- Amazon Product Data: [Link](https://registry.opendata.aws/amazon-reviews/)
+- Databricks: [Link](https://databricks.com/)
+- BERT and Transformers: [Link](https://huggingface.co/transformers/)
