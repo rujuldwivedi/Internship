@@ -1,7 +1,7 @@
 # AI-Powered Classification System for Automated Categorization
 
 <!-- Project Banner -->
-![Project Banner](banner_image.png)
+![Project Banner](https://plat.ai/wp-content/uploads/Shutterstock_1698736867.jpg.webp)
 
 ## Table of Contents
 
