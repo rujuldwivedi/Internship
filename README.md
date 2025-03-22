@@ -68,8 +68,6 @@ Manual categorization in large-scale environments is complex due to diverse prod
 ## Evaluation Metrics
 - Accuracy, Precision, Recall, F1-score.
 - Classification reports and confusion matrices for detailed assessment.
-- Dataset info: ![Dataset Info](results2.png)
-- Results: ![Classification Report](results1.png)
 
 ## Results
 - **Amazon Product Metadata:** 90% test accuracy.
