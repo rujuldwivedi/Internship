@@ -1,4 +1,4 @@
-# AI-Powered Classification System for Automated Retail Categorization
+# AI-Powered Classification System for Automated Categorization
 
 <!-- Project Banner -->
 ![Project Banner](banner_image.png)
