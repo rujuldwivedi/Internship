@@ -19,10 +19,6 @@
 - [Evaluation Metrics](#evaluation-metrics)
 - [Results](#results)
 - [Future Scope](#future-scope)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [References](#references)
 
 ---
 
@@ -58,7 +54,7 @@ Manual categorization in large-scale environments is complex due to diverse prod
 
 #### Audience Persona Categorization
 - Classified user titles from Databricks using LSTM.
-- Model trained on well-distributed data with **97.5% accuracy**.
+- Model trained on well-distributed data.
 
 #### Chief-Level Role Classification
 - Classified titles into chief-level roles, managing extreme class imbalance.
@@ -72,13 +68,14 @@ Manual categorization in large-scale environments is complex due to diverse prod
 ## Evaluation Metrics
 - Accuracy, Precision, Recall, F1-score.
 - Classification reports and confusion matrices for detailed assessment.
-- Placeholder for results: ![Classification Report](results1.png)
-- Placeholder for dataset info: ![Dataset Info](results2.png)
+- Dataset info: ![Dataset Info](results2.png)
+- Results: ![Classification Report](results1.png)
 
 ## Results
 - **Amazon Product Metadata:** 90% test accuracy.
-- **Audience Persona Classification:** 97.5% test accuracy.
-- **Chief-Level Roles:** Struggled with recall (77%); hybrid BERT + Gen AI model planned.
+- **Audience Persona Classification:** 97.5% test accuracy and 93% recall.
+- **Chief-Level Roles:** 93.5% test accuracy but struggled with recall (77%); hybrid BERT + Gen AI model planned.
+- K-Fold cross validation also planned for both the models after some POCs.
 
 ## Future Scope
 - Real-time categorization for dynamic inventory systems.
