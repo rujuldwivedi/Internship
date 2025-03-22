@@ -27,10 +27,10 @@
 ---
 
 ## Introduction
-This project focuses on developing an AI-powered classification system aimed at optimizing inventory management and product organization through automated retail categorization. The system leverages advanced NLP and deep learning techniques to classify product metadata and user-generated title descriptions.
+This project focuses on developing an AI-powered classification system aimed at optimizing inventory management and product organization through automated categorization. The system leverages advanced NLP and deep learning techniques to classify product metadata and user-generated title descriptions.
 
 ## Problem Statement
-Retail categorization in large-scale environments is complex due to diverse product attributes and extensive inventories. Manual categorization is inefficient and error-prone, necessitating an automated solution. The project addresses three major challenges:
+Manual categorization in large-scale environments is complex due to diverse product attributes and extensive inventories. It is inefficient and error-prone, necessitating an automated solution. The project addresses three major challenges:
 1. Accurately classifying Amazon product metadata.
 2. Categorizing user-entered titles from the Databricks dataset.
 3. Managing a highly imbalanced dataset for chief-level role classification.
@@ -78,37 +78,9 @@ Retail categorization in large-scale environments is complex due to diverse prod
 ## Results
 - **Amazon Product Metadata:** 90% test accuracy.
 - **Audience Persona Classification:** 97.5% test accuracy.
-- **Chief-Level Roles:** Struggled with recall; hybrid BERT + Gen AI model planned.
+- **Chief-Level Roles:** Struggled with recall (77%); hybrid BERT + Gen AI model planned.
 
 ## Future Scope
 - Real-time categorization for dynamic inventory systems.
 - Integration of multi-lingual models for broader applications.
 - Implement feedback loops for iterative improvements.
-
-## Getting Started
-### Installation
-Clone the repository:
-```
-   git clone <repository_url>
-```
-
-Install dependencies:
-```
-   pip install -r requirements.txt
-```
-
-### Usage
-Run preprocessing:
-```
-   python preprocess.py
-```
-
-Train the models:
-```
-   python train_model.py --model LSTM
-```
-
-### References
-- Amazon Product Data: [Link](https://registry.opendata.aws/amazon-reviews/)
-- Databricks: [Link](https://databricks.com/)
-- BERT and Transformers: [Link](https://huggingface.co/transformers/)
