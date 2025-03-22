@@ -1,6 +1,3 @@
-<!-- Company Logo -->
-![Latentview Analytics](company_logo.png)  
-
 # AI-Powered Classification System for Automated Retail Categorization
 
 <!-- Project Banner -->
